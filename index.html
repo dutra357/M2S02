@@ -32,18 +32,18 @@
         }
 
         .col-3 a:hover {
-            color:aliceblue;
+            color: aliceblue;
         }
 
         h3 {
-            color:aliceblue;
+            color: aliceblue;
         }
 
-        .form-control, textarea {
+        .form-control,
+        textarea {
             width: 250px;
 
         }
-
     </style>
 </head>
 
@@ -54,7 +54,8 @@
         <nav class="navbar shadow-lg rounded-pill">
             <div class="row justify-content-center">
                 <div class="col-3"><a href="#" class="navbar-brand"><i class="bi bi-person-fill"></i> Sobre</a></div>
-                <div class="col-3"><a href="#" class="navbar-brand"><i class="bi bi-person-vcard"></i> Portfolio</a></div>
+                <div class="col-3"><a href="#" class="navbar-brand"><i class="bi bi-person-vcard"></i> Portfolio</a>
+                </div>
                 <div class="col-3"><a href="#" class="navbar-brand"><i class="bi bi-server"></i> Stacks</a></div>
                 <div class="col-3"><a href="#" class="navbar-brand"><i class="bi bi-vector-pen"></i> Contato</a></div>
             </div>
@@ -68,9 +69,10 @@
     <div class="container">
         <article>
             <h3>Sobre:</h3>
-            <p class="fw-light">Lorem ipsum dolor sit <a href="#" class="navbar-brand">amet</a>, consectetur adipisicing elit. Explicabo aut reiciendis
-                 odit quos porro nulla vel doloremque sapiente voluptatum, animi nemo quaerat?
-                  Aliquam hic inventore sequi aut distinctio, laudantium iste.</p>
+            <p class="fw-light">Lorem ipsum dolor sit <a href="#" class="navbar-brand">amet</a>, consectetur adipisicing
+                elit. Explicabo aut reiciendis
+                odit quos porro nulla vel doloremque sapiente voluptatum, animi nemo quaerat?
+                Aliquam hic inventore sequi aut distinctio, laudantium iste.</p>
         </article>
     </div>
 
@@ -78,8 +80,8 @@
         <article>
             <h3>Portfolio:</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo aut reiciendis
-                 odit quos porro nulla vel doloremque sapiente voluptatum, animi nemo quaerat?
-                  Aliquam hic inventore sequi aut distinctio, laudantium iste.</p>
+                odit quos porro nulla vel doloremque sapiente voluptatum, animi nemo quaerat?
+                Aliquam hic inventore sequi aut distinctio, laudantium iste.</p>
         </article>
     </div>
 
@@ -87,8 +89,16 @@
         <article>
             <h3>Stacks:</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo aut reiciendis
-                 odit quos porro nulla vel doloremque sapiente voluptatum, animi nemo quaerat?
-                  Aliquam hic inventore sequi aut distinctio, laudantium iste.</p>
+                odit quos porro nulla vel doloremque sapiente voluptatum, animi nemo quaerat?
+                Aliquam hic inventore sequi aut distinctio, laudantium iste.
+            </p>
+
+            <p><i class="bi bi-filetype-sql"></i> SQL</p>
+            <p><i class="bi bi-filetype-java"></i> Java</p>
+            <p><i class="bi bi-filetype-js"></i> JavaScript</p>
+            <p><i class="bi bi-filetype-html"></i> HTML</p>
+            <p></p>
+
         </article>
     </div>
 
@@ -100,31 +110,26 @@
 
 
     <div class="container">
+        <form class="needs-validation" action="" method="post">
+            <fieldset>
+                <h3>Contato</h3>
+                <div class="form-floating mb-lg-2">
+                    <input class="form-control" type="text" name="nome" id="nome" placeholder=" " required>
+                    <label class="form-label" for="nome">Nome:</label>
+                </div>
 
-        <fieldset>
-            <h3>Contato</h3>
-            <div class="col">
-                <label class="form-label" for="input">Informe seu nome:</label>
-                <input class="form-control" type="text" name="" id="" placeholder="seu nome">
-                <br>
-                <label class="form-label" for="input">Seu e-mail:</label>
-                <input class="form-control" type="email" name="" id="" placeholder="email@exemplo.com">
-                <br>
-                
-                <label class="form-label" for="input">Digite sua mensagem:</label>
-                <br>
-                <textarea name="" id=""></textarea>
-                <br>
-                <button class="btn btn-dark" type="submit">Enviar</button>
-    
-    
-            </div>
-        </fieldset>
+                <div class="form-floating mb-2">
+                    <input class="form-control" type="email" name="email" id="email" placeholder=" " required>
+                    <label class="form-label" for="email">Email:</label>
+                </div>
+
+                <div class="form-floating">
+                    <textarea name="msg" id="msg" placeholder="  Mensagem" required></textarea>
+                </div>
+                <button class="btn btn-dark" type="submit"><i class="bi bi-arrow-right-short"></i> Enviar</button>
+            </fieldset>
+        </form>
     </div>
-
-
-
-
 
 
 
@@ -136,9 +141,9 @@
     <div class="container text-muted" id="rodape">
         <div class="row">
             <div class="col">
-                <div class="col-12"><i class="bi bi-github"></i> Github</div>
-                <div class="col-12"><i class="bi bi-mailbox"></i> Email</div>
-                <div class="col-12"><i class="bi bi-linkedin"></i> LinkedIn</div>
+                <div class="col-12"></div>
+                <div class="col-12"></div>
+                <div class="col-12"></div>
             </div>
             <div class="col">
                 <div class="col-12"><i class="bi bi-github"></i> Github</div>
@@ -164,7 +169,7 @@
 
     <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/bootstrap/js/jquery-3.7.1.min.js"></script>
-    
+
 </body>
 
 </html>
