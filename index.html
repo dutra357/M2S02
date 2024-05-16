@@ -37,19 +37,26 @@
         h2 {
             color:aliceblue;
         }
+
+        footer {
+            color:aliceblue;
+            background-color: black;
+            display: flex;
+        }
+
     </style>
 </head>
 
 
 <body class="bg-gradient">
 
-    <div class="container" id="menu">
-        <nav class="navbar shadow-lg">
+    <div class="container d-print-none" id="menu">
+        <nav class="navbar shadow-lg rounded-pill">
             <div class="row justify-content-center">
-                <div class="col-3"><a href="#" class="navbar-brand">Sobre</a></div>
-                <div class="col-3"><a href="#" class="navbar-brand">Portfolio</a></div>
-                <div class="col-3"><a href="#" class="navbar-brand">Stacks</a></div>
-                <div class="col-3"><a href="#" class="navbar-brand">Contato</a></div>
+                <div class="col-3"><a href="#" class="navbar-brand"><i class="bi bi-person-fill"></i> Sobre</a></div>
+                <div class="col-3"><a href="#" class="navbar-brand"><i class="bi bi-person-vcard"></i> Portfolio</a></div>
+                <div class="col-3"><a href="#" class="navbar-brand"><i class="bi bi-server"></i> Stacks</a></div>
+                <div class="col-3"><a href="#" class="navbar-brand"><i class="bi bi-vector-pen"></i> Contato</a></div>
             </div>
         </nav>
     </div>
@@ -61,7 +68,7 @@
     <div class="container">
         <article>
             <h2>Sobre:</h2>
-            <p>Lorem ipsum dolor sit <a href="#" class="navbar-brand">amet</a>, consectetur adipisicing elit. Explicabo aut reiciendis
+            <p class="fw-light">Lorem ipsum dolor sit <a href="#" class="navbar-brand">amet</a>, consectetur adipisicing elit. Explicabo aut reiciendis
                  odit quos porro nulla vel doloremque sapiente voluptatum, animi nemo quaerat?
                   Aliquam hic inventore sequi aut distinctio, laudantium iste.</p>
         </article>
@@ -147,11 +154,14 @@
         <br>
     </div>
 
+    <div class="container">
+        <p class="d-none d-print-block">Fonte: www.meusite.com.br</p>
+    </div>
 
 
-
-
-
+    <footer>
+        <p>Desenvolvido por DAVID ALVES DUTRA</p>
+    </footer>
 
     <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/bootstrap/js/jquery-3.7.1.min.js"></script>
