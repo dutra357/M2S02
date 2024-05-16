@@ -29,21 +29,31 @@
         li {
             color: azure;
         }
+
+        .col-3 {
+            padding: 5px;
+            align-items: center;
+            border: 1px solid black;
+            font-size: 25px;
+        }
+
+        .col-3:hover a {
+            color:aliceblue;
+        }
     </style>
 </head>
 
 
 <body>
 
-    <div>
-        <nav class="container">
-            <ul>
-                <li><a href="#" class="navbar-brand">LOGO</a></li>
-                <li><a href="#" class="navbar-brand">Home</a></li>
-                <li><a href="#" class="navbar-brand">About</a></li>
-                <li><a href="#" class="navbar-brand">Portfolio</a></li>
-                <li><a href="#" class="navbar-brand">Contact</a></li>
-            </ul>
+    <div class="container">
+        <nav>
+            <div class="row justify-content-center">
+                <div class="col-3"><a href="#" class="navbar-brand">Sobre</a></div>
+                <div class="col-3"><a href="#" class="navbar-brand">Portfolio</a></div>
+                <div class="col-3"><a href="#" class="navbar-brand">Stacks</a></div>
+                <div class="col-3"><a href="#" class="navbar-brand">Contato</a></div>
+            </div>
         </nav>
     </div>
 
