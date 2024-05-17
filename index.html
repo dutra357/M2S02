@@ -37,9 +37,8 @@
             color: aliceblue;
         }
 
-        .form-control,
-        textarea {
-            width: 250px;
+        #contact {
+            border: 1px solid aliceblue;
 
         }
     </style>
@@ -51,7 +50,7 @@
     <nav class="navbar bg-light navbar-expand-sm py-2 text-bg-light font-monospace fs-5">
         <div class="container">
             <a href="" class="navbar-brand d-flex align-items-center">
-                <a class="text-bg-light" href="https://github.com/dutra357"><i class="bi bi-github"></i> Github</a>
+                <a class="text-bg-light" href="https://github.com/dutra357"><i class="bi bi-github"></i> David Alves Dutra</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar"><span
                     class="navbar-toggler-icon"></span></button>
 
@@ -101,7 +100,7 @@
                                 Tempore nobis obcaecati reprehenderit optio hic perspiciatis asperiores quas
                                 </p>
                         </div>
-                        <div class="card-footer">Ref.</div>
+                        <div class="card-footer text-center">www.exemplo.com.br</div>
                     </div>
                 </div>
 
@@ -117,7 +116,7 @@
                                 tenetur. Facilis nam dignissimos odit ipsa necessitatibus at praesentium
                                 dolorem autem beatae maxime.</p>
                         </div>
-                        <div class="card-footer">Ref.</div>
+                        <div class="card-footer text-center">www.exemplo.com.br</div>
                     </div>
                 </div>
 
@@ -133,7 +132,7 @@
                                 tenetur. Facilis nam dignissimos odit ipsa necessitatibus at praesentium
                                 dolorem autem beatae maxime.</p>
                         </div>
-                        <div class="card-footer">Ref.</div>
+                        <div class="card-footer text-center">www.exemplo.com.br</div>
                     </div>
                 </div>
             </div>
@@ -168,25 +167,30 @@
 
 
     <div class="container">
-        <form class="needs-validation" action="" method="post">
-            <fieldset>
-                <h3>Contato</h3>
-                <div class="form-floating mb-lg-2">
-                    <input class="form-control" type="text" name="nome" id="nome" placeholder=" " required>
-                    <label class="form-label" for="nome">Nome:</label>
-                </div>
-
-                <div class="form-floating mb-2">
-                    <input class="form-control" type="email" name="email" id="email" placeholder=" " required>
-                    <label class="form-label" for="email">Email:</label>
-                </div>
-
-                <div class="form-floating">
-                    <textarea name="msg" id="msg" placeholder="  Mensagem" required></textarea>
-                </div>
-                <button class="btn btn-dark" type="submit"><i class="bi bi-arrow-right-short"></i> Enviar</button>
-            </fieldset>
-        </form>
+        <div class="row">
+            <div class="col-md-1 col-sm-2 col-auto" id="contact">
+                <form class="needs-validation" action="" method="post">
+                    <fieldset>
+                        <h3>Contato</h3>
+                        <div class="form-floating mb-lg-2">
+                            <input class="form-control" type="text" name="nome" id="nome" placeholder=" " required>
+                            <label class="form-label" for="nome">Nome:</label>
+                        </div>
+                        <br>
+        
+                        <div class="form-floating mb-2">
+                            <input class="form-control" type="email" name="email" id="email" placeholder=" " required>
+                            <label class="form-label" for="email">Email:</label>
+                        </div>
+        
+                        <div class="form-floating">
+                            <textarea name="msg" id="msg" placeholder="  Mensagem" required></textarea>
+                        </div>
+                        <button class="btn btn-dark" type="submit"><i class="bi bi-arrow-right-short"></i> Enviar</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
     </div>
 
 
