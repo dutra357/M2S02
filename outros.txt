@@ -1,0 +1,21 @@
+MENU:
+
+    <!-- <div class="container d-print-none" id="menu">
+        <nav class="navbar shadow-lg rounded-pill">
+            <div class="row justify-content-center">
+                <div class="col-3"><a href="#" class="navbar-brand"><i class="bi bi-person-fill"></i> Sobre</a></div>
+                <div class="col-3"><a href="#" class="navbar-brand"><i class="bi bi-person-vcard"></i> Portfolio</a>
+                </div>
+                <div class="col-3"><a href="#" class="navbar-brand"><i class="bi bi-server"></i> Stacks</a></div>
+                <div class="col-3"><a href="#" class="navbar-brand"><i class="bi bi-vector-pen"></i> Contato</a></div>
+            </div>
+        </nav>
+    </div> -->
+
+    <!-- <form action="" class="d-flex">
+        <div class="input-group"><input type="search" name="" id="" class="form-control me-2" placeholder="Buscar.."><button class="submit btn-outline-succes">Buscar</button></div>
+    </form> -->
+
+
+
+

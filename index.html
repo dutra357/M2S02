@@ -16,10 +16,12 @@
             font-family: Arial, Helvetica, sans-serif
         }
 
-        .navbar {
-            border: 1px solid aliceblue;
+        .card-body {
+            background-color: rgb(67, 129, 180);
+        }
+
+        .navbar-brand {
             margin-top: 5px;
-            justify-content: center;
         }
 
         article {
@@ -50,64 +52,103 @@
 
 <body class="">
 
-    <!-- <div class="container d-print-none" id="menu">
-        <nav class="navbar shadow-lg rounded-pill">
-            <div class="row justify-content-center">
-                <div class="col-3"><a href="#" class="navbar-brand"><i class="bi bi-person-fill"></i> Sobre</a></div>
-                <div class="col-3"><a href="#" class="navbar-brand"><i class="bi bi-person-vcard"></i> Portfolio</a>
-                </div>
-                <div class="col-3"><a href="#" class="navbar-brand"><i class="bi bi-server"></i> Stacks</a></div>
-                <div class="col-3"><a href="#" class="navbar-brand"><i class="bi bi-vector-pen"></i> Contato</a></div>
-            </div>
-        </nav>
-    </div> -->
-
-    <nav class="navbar bg-light navbar-expand-sm">
+    <nav class="navbar bg-light navbar-expand-sm py-3 bg-dark">
         <div class="container">
             <a href="" class="navbar-brand d-flex align-items-center">
                 <i class="bi bi-pc-display-horizontal me-2"></i>
                 LINK1</a>
-                <!-- <span class="navbar-text">David DUTRA</span> -->
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar"><span class="navbar-toggler-icon"></span></button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar"><span
+                    class="navbar-toggler-icon"></span></button>
 
-                <div class="collapse navbar-collapse" id="menuNavbar">
-                    <div class="navbar-nav">
-                        <a href="#" class="nav-link active">Sobre</a>
-                        <a href="#" class="nav-link">Portfolio</a>
-                        <a href="#" class="nav-link">Stacks</a>
-                        <a href="#" class="nav-link">Contato</a>
-                    </div>
+            <div class="collapse navbar-collapse" id="menuNavbar">
+                <div class="navbar-nav ms-auto">
+                    <a href="#" class="nav-link active"><i class="bi bi-person-fill"> </i>Sobre</a>
+                    <a href="#" class="nav-link"><i class="bi bi-person-vcard"></i> Portfolio</a>
+                    <a href="#" class="nav-link"><i class="bi bi-server"></i> Stacks</a>
+                    <a href="#" class="nav-link"><i class="bi bi-vector-pen"></i> Contato</a>
                 </div>
-
-                <form action="" class="d-flex">
-                    <div class="input-group"><input type="search" name="" id="" class="form-control me-2" placeholder="Buscar.."><button class="submit btn-outline-succes">Buscar</button></div>
-                </form>
+            </div>
         </div>
     </nav>
 
     <br>
 
+    <div class="container py-5">
+        <div class="card col-5">
+            <div class="card-body">
+                <article>
+                    <h5 class="card-title">Sobre:</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Explicabo aut reiciendis
+                        odit quos porro nulla vel doloremque sapiente voluptatum, animi nemo quaerat?
+                        Aliquam hic inventore sequi aut distinctio, laudantium iste.</p>
+                </article>
+            </div>
+        </div>
+    </div>
     <br>
 
     <div class="container">
-        <article>
-            <h3>Sobre:</h3>
-            <p class="fw-light">Lorem ipsum dolor sit <a href="#" class="navbar-brand">amet</a>, consectetur adipisicing
-                elit. Explicabo aut reiciendis
-                odit quos porro nulla vel doloremque sapiente voluptatum, animi nemo quaerat?
-                Aliquam hic inventore sequi aut distinctio, laudantium iste.</p>
-        </article>
+        <div class="row">
+            <h5 class="card-title">Portfólio</h5>
+        </div>
+
+        <div class="card-group">
+            <div class="row row-cols-3 g-3">
+                <div class="col">
+                    <div class="card">
+                        <img src="http://picsum.photos/200/200" alt="" class="card-img-top">
+                        <h5 class="card-header">Header</h5>
+                        <div class="card-body">
+                            <h5 class="card-title">Título</h5>
+                            <h6 class="card-subtitle">Subtitulo</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Tempore nobis obcaecati reprehenderit optio hic perspiciatis asperiores quas
+                                tenetur. Facilis nam dignissimos odit ipsa necessitatibus at praesentium
+                                dolorem autem beatae maxime.</p>
+                        </div>
+                        <div class="card-footer">Ref.</div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <img src="http://picsum.photos/200/200" alt="" class="card-img-top">
+                        <h5 class="card-header">Header</h5>
+                        <div class="card-body">
+                            <h5 class="card-title">Título</h5>
+                            <h6 class="card-subtitle">Subtitulo</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Tempore nobis obcaecati reprehenderit optio hic perspiciatis asperiores quas
+                                tenetur. Facilis nam dignissimos odit ipsa necessitatibus at praesentium
+                                dolorem autem beatae maxime.</p>
+                        </div>
+                        <div class="card-footer">Ref.</div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <img src="http://picsum.photos/200/200" alt="" class="card-img-top">
+                        <h5 class="card-header">Header</h5>
+                        <div class="card-body">
+                            <h5 class="card-title">Título</h5>
+                            <h6 class="card-subtitle">Subtitulo</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Tempore nobis obcaecati reprehenderit optio hic perspiciatis asperiores quas
+                                tenetur. Facilis nam dignissimos odit ipsa necessitatibus at praesentium
+                                dolorem autem beatae maxime.</p>
+                        </div>
+                        <div class="card-footer">Ref.</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 
-    <div class="container">
-        <article>
-            <h3>Portfolio:</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo aut reiciendis
-                odit quos porro nulla vel doloremque sapiente voluptatum, animi nemo quaerat?
-                Aliquam hic inventore sequi aut distinctio, laudantium iste.</p>
-        </article>
-    </div>
+    <br>
 
     <div class="container">
         <article>
@@ -188,6 +229,13 @@
 
     <div class="container">
         <p class="d-none d-print-block">Fonte: www.meusite.com.br</p>
+    </div>
+
+    <div>
+        <footer class="p4 bg-dark text-light text-center">
+            Desenvolvido por David Alves Dutra
+
+        </footer>
     </div>
 
 
