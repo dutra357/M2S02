@@ -16,6 +16,10 @@
             font-family: Arial, Helvetica, sans-serif
         }
 
+        a {
+            text-decoration: none
+        }
+
         .card-body {
             background-color: rgb(67, 129, 180);
         }
@@ -27,14 +31,6 @@
         article {
             text-align: justify;
             display: flexbox;
-        }
-
-        .col-3 {
-            font-size: 25px;
-        }
-
-        .col-3 a:hover {
-            color: aliceblue;
         }
 
         h3 {
@@ -52,18 +48,16 @@
 
 <body class="">
 
-    <nav class="navbar bg-light navbar-expand-sm py-3 bg-dark">
+    <nav class="navbar bg-light navbar-expand-sm py-2 text-bg-light font-monospace fs-5">
         <div class="container">
             <a href="" class="navbar-brand d-flex align-items-center">
-                <i class="bi bi-pc-display-horizontal me-2"></i>
-                LINK1</a>
-
+                <a class="text-bg-light" href="https://github.com/dutra357"><i class="bi bi-github"></i> Github</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar"><span
                     class="navbar-toggler-icon"></span></button>
 
             <div class="collapse navbar-collapse" id="menuNavbar">
                 <div class="navbar-nav ms-auto">
-                    <a href="#" class="nav-link active"><i class="bi bi-person-fill"> </i>Sobre</a>
+                    <a href="#" class="nav-link"><i class="bi bi-person-fill"> </i>Sobre</a>
                     <a href="#" class="nav-link"><i class="bi bi-person-vcard"></i> Portfolio</a>
                     <a href="#" class="nav-link"><i class="bi bi-server"></i> Stacks</a>
                     <a href="#" class="nav-link"><i class="bi bi-vector-pen"></i> Contato</a>
@@ -91,14 +85,29 @@
 
     <div class="container">
         <div class="row">
-            <h5 class="card-title">Portfólio</h5>
+            <h3>Portfólio</h3>
         </div>
 
         <div class="card-group">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
                 <div class="col">
-                    <div class="card">
-                        <img src="http://picsum.photos/200/200" alt="" class="card-img-top">
+                    <div class="card h-100">
+                        <img src="http://picsum.photos/150/150" alt="" class="card-img-top">
+                        <h5 class="card-header">Header</h5>
+                        <div class="card-body">
+                            <h5 class="card-title">Título</h5>
+                            <h6 class="card-subtitle">Subtitulo</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Tempore nobis obcaecati reprehenderit optio hic perspiciatis asperiores quas
+                                </p>
+                        </div>
+                        <div class="card-footer">Ref.</div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="http://picsum.photos/150/150" alt="" class="card-img-top">
                         <h5 class="card-header">Header</h5>
                         <div class="card-body">
                             <h5 class="card-title">Título</h5>
@@ -113,24 +122,8 @@
                 </div>
 
                 <div class="col">
-                    <div class="card">
-                        <img src="http://picsum.photos/200/200" alt="" class="card-img-top">
-                        <h5 class="card-header">Header</h5>
-                        <div class="card-body">
-                            <h5 class="card-title">Título</h5>
-                            <h6 class="card-subtitle">Subtitulo</h6>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Tempore nobis obcaecati reprehenderit optio hic perspiciatis asperiores quas
-                                tenetur. Facilis nam dignissimos odit ipsa necessitatibus at praesentium
-                                dolorem autem beatae maxime.</p>
-                        </div>
-                        <div class="card-footer">Ref.</div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card">
-                        <img src="http://picsum.photos/200/200" alt="" class="card-img-top">
+                    <div class="card h-100">
+                        <img src="http://picsum.photos/150/150" alt="" class="card-img-top">
                         <h5 class="card-header">Header</h5>
                         <div class="card-body">
                             <h5 class="card-title">Título</h5>
@@ -232,7 +225,7 @@
     </div>
 
     <div>
-        <footer class="p4 bg-dark text-light text-center">
+        <footer class="p4 text-bg-light text-dark text-center font-monospace">
             Desenvolvido por David Alves Dutra
 
         </footer>
