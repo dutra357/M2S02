@@ -17,7 +17,12 @@
         }
 
         a {
-            text-decoration: none
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            color: aliceblue;
         }
 
         .card-body {
@@ -49,29 +54,30 @@
     <nav class="navbar bg-light navbar-expand-sm py-2 text-bg-light font-monospace fs-5">
         <div class="container">
             <a href="" class="navbar-brand d-flex align-items-center">
-                <a class="text-bg-light" href="https://github.com/dutra357"><i class="bi bi-github"></i> David Alves Dutra</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar"><span
-                    class="navbar-toggler-icon"></span></button>
+                <a class="text-bg-light" href="https://github.com/dutra357"><i class="bi bi-github"></i> David Alves
+                    Dutra</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#menuNavbar"><span class="navbar-toggler-icon"></span></button>
 
-            <div class="collapse navbar-collapse" id="menuNavbar">
-                <div class="navbar-nav ms-auto">
-                    <a href="#" class="nav-link"><i class="bi bi-person-fill"> </i>Sobre</a>
-                    <a href="#" class="nav-link"><i class="bi bi-person-vcard"></i> Portfolio</a>
-                    <a href="#" class="nav-link"><i class="bi bi-server"></i> Stacks</a>
-                    <a href="#" class="nav-link"><i class="bi bi-vector-pen"></i> Contato</a>
+                <div class="collapse navbar-collapse" id="menuNavbar">
+                    <div class="navbar-nav ms-auto">
+                        <a href="#" class="nav-link"><i class="bi bi-person-fill"> </i>Sobre</a>
+                        <a href="#" class="nav-link"><i class="bi bi-person-vcard"></i> Portfolio</a>
+                        <a href="#" class="nav-link"><i class="bi bi-server"></i> Stacks</a>
+                        <a href="#" class="nav-link"><i class="bi bi-vector-pen"></i> Contato</a>
+                    </div>
                 </div>
-            </div>
         </div>
     </nav>
 
     <br>
 
     <div class="container py-5">
-        <div class="card col-5">
-            <div class="card-body">
+        <div class="row">
+            <div class="col-5">
                 <article>
-                    <h5 class="card-title">Sobre:</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    <h3>Sobre:</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit. Explicabo aut reiciendis
                         odit quos porro nulla vel doloremque sapiente voluptatum, animi nemo quaerat?
                         Aliquam hic inventore sequi aut distinctio, laudantium iste.</p>
@@ -97,7 +103,7 @@
                             <h6 class="card-subtitle">Subtitulo</h6>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Tempore nobis obcaecati reprehenderit optio hic perspiciatis asperiores quas
-                                </p>
+                            </p>
                         </div>
                         <div class="card-footer text-center">www.exemplo.com.br</div>
                     </div>
@@ -170,23 +176,23 @@
 
         <div class="row">
             <div class="col-12 col-sm-8 offset-sm-2 col-lg-6 offset-lg-3">
-                <form class="needs-validation" action="" method="post" >
-                        <h3>Contato</h3>
-                        <div class="form-floating">
-                            <input class="form-control" type="text" name="nome" id="nome" placeholder=" " required>
-                            <label class="form-label" for="nome">Nome:</label>
-                        </div>
+                <form class="needs-validation" action="" method="post">
+                    <h3>Contato</h3>
+                    <div class="form-floating">
+                        <input class="form-control" type="text" name="nome" id="nome" placeholder=" " required>
+                        <label class="form-label" for="nome">Nome:</label>
+                    </div>
 
-                        <div class="form-floating py-2">
-                            <input class="form-control" type="email" name="email" id="email" placeholder=" " required>
-                            <label class="form-label" for="email">Email:</label>
-                        </div>
-        
-                        <div class="form-floating py-2">
-                            <textarea class="form-control" placeholder=" " id="floatingTextarea"></textarea>
-                            <label for="floatingTextarea">Mensagem</label>
-                        </div>
-                        <button class="btn btn-dark" type="submit"><i class="bi bi-arrow-right-short"></i> Enviar</button>
+                    <div class="form-floating py-2">
+                        <input class="form-control" type="email" name="email" id="email" placeholder=" " required>
+                        <label class="form-label" for="email">Email:</label>
+                    </div>
+
+                    <div class="form-floating py-2">
+                        <textarea class="form-control" placeholder=" " id="floatingTextarea"></textarea>
+                        <label for="floatingTextarea">Mensagem</label>
+                    </div>
+                    <button class="btn btn-dark" type="submit"><i class="bi bi-arrow-right-short"></i> Enviar</button>
                 </form>
             </div>
         </div>
@@ -200,22 +206,12 @@
         <hr>
     </div>
 
-    <div class="container text-muted" id="rodape">
-        <div class="row">
-            <div class="col">
-                <div class="col-12"></div>
-                <div class="col-12"></div>
-                <div class="col-12"></div>
-            </div>
-            <div class="col">
-                <div class="col-12"><i class="bi bi-github"></i> Github</div>
-                <div class="col-12"><i class="bi bi-mailbox"></i> Email</div>
-                <div class="col-12"><i class="bi bi-linkedin"></i> LinkedIn</div>
-            </div>
-            <div class="col">
-                <div class="col-12"><i class="bi bi-github"></i> Github</div>
-                <div class="col-12"><i class="bi bi-mailbox"></i> Email</div>
-                <div class="col-12"><i class="bi bi-linkedin"></i> LinkedIn</div>
+    <div class="container">
+        <div class="row justify-content-end">
+            <div class="col-3">
+                <div class="col"><i class="bi bi-github"></i> <a href="https://github.com/dutra357">Github</a></div>
+                <div class="col"><i class="bi bi-mailbox"></i> <a href="#">Email</a></div>
+                <div class="col"><i class="bi bi-linkedin"></i> <a href="#">LinkedIn</a></div>
             </div>
         </div>
     </div>
@@ -238,7 +234,5 @@
 
     <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/bootstrap/js/jquery-3.7.1.min.js"></script>
-
 </body>
-
 </html>
