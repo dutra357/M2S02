@@ -31,6 +31,7 @@
 
         .navbar-brand {
             margin-top: 5px;
+            height: inherit;
         }
 
         article {
@@ -44,6 +45,10 @@
 
         #contact {
             border: 1px solid aliceblue;
+        }
+
+        textarea {
+            height: 146px;
         }
     </style>
 </head>
@@ -85,68 +90,6 @@
             </div>
         </div>
     </div>
-    <br>
-
-    <div class="container">
-        <div class="row">
-            <h3>Portfólio</h3>
-        </div>
-
-        <div class="card-group">
-            <div class="row justify-content-around row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="http://picsum.photos/150/100" alt="" class="card-img-top">
-                        <h5 class="card-header">Header</h5>
-                        <div class="card-body">
-                            <h5 class="card-title">Título</h5>
-                            <h6 class="card-subtitle">Subtitulo</h6>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Tempore nobis obcaecati reprehenderit optio hic perspiciatis asperiores quas
-                            </p>
-                        </div>
-                        <div class="card-footer text-center">www.exemplo.com.br</div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="http://picsum.photos/150/100" alt="" class="card-img-top">
-                        <h5 class="card-header">Header</h5>
-                        <div class="card-body">
-                            <h5 class="card-title">Título</h5>
-                            <h6 class="card-subtitle">Subtitulo</h6>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Tempore nobis obcaecati reprehenderit optio hic perspiciatis asperiores quas
-                                tenetur. Facilis nam dignissimos odit ipsa necessitatibus at praesentium
-                                dolorem autem beatae maxime.</p>
-                        </div>
-                        <div class="card-footer text-center">www.exemplo.com.br</div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="http://picsum.photos/150/100" alt="" class="card-img-top">
-                        <h5 class="card-header">Header</h5>
-                        <div class="card-body">
-                            <h5 class="card-title">Título</h5>
-                            <h6 class="card-subtitle">Subtitulo</h6>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Tempore nobis obcaecati reprehenderit optio hic perspiciatis asperiores quas
-                                tenetur. Facilis nam dignissimos odit ipsa necessitatibus at praesentium
-                                dolorem autem beatae maxime.</p>
-                        </div>
-                        <div class="card-footer text-center">www.exemplo.com.br</div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-
-    <br>
 
     <div class="container">
         <article>
@@ -163,6 +106,65 @@
             <p></p>
 
         </article>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <h3> <span data-bs-toggle="tooltip" data-bs-title="Trabalhos realizados">Portfólio</span></h3>
+        </div>
+
+        <div class="card-group">
+            <div class="row justify-content-around row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="http://picsum.photos/150/100" alt="" class="img-fluid card-img-top">
+                        <h5 class="card-header">Header</h5>
+                        <div class="card-body">
+                            <h5 class="card-title">Título</h5>
+                            <h6 class="card-subtitle">Subtitulo</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Tempore nobis obcaecati reprehenderit optio hic perspiciatis asperiores quas
+                            </p>
+                        </div>
+                        <div class="card-footer text-center">www.exemplo.com.br</div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="http://picsum.photos/150/100" alt="" class="img-fluid card-img-top">
+                        <h5 class="card-header">Header</h5>
+                        <div class="card-body">
+                            <h5 class="card-title">Título</h5>
+                            <h6 class="card-subtitle">Subtitulo</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Tempore nobis obcaecati reprehenderit optio hic perspiciatis asperiores quas
+                                tenetur. Facilis nam dignissimos odit ipsa necessitatibus at praesentium
+                                dolorem autem beatae maxime.</p>
+                        </div>
+                        <div class="card-footer text-center">www.exemplo.com.br</div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="http://picsum.photos/150/100" alt="" class="img-fluid card-img-top">
+                        <h5 class="card-header">Header</h5>
+                        <div class="card-body">
+                            <h5 class="card-title">Título</h5>
+                            <h6 class="card-subtitle">Subtitulo</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Tempore nobis obcaecati reprehenderit optio hic perspiciatis asperiores quas
+                                tenetur. Facilis nam dignissimos odit ipsa necessitatibus at praesentium
+                                dolorem autem beatae maxime.</p>
+                        </div>
+                        <div class="card-footer text-center">www.exemplo.com.br</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
     </div>
 
     <div class="container">
@@ -192,7 +194,10 @@
                         <textarea class="form-control" placeholder=" " id="floatingTextarea"></textarea>
                         <label for="floatingTextarea">Mensagem</label>
                     </div>
-                    <button class="btn btn-dark" type="submit"><i class="bi bi-arrow-right-short"></i> Enviar</button>
+                    <div class="text-end">
+                        <button class="btn btn-dark" type="submit"><i class="bi bi-arrow-right-short"></i>
+                            Enviar</button>
+                    </div>
                 </form>
             </div>
         </div>
@@ -204,11 +209,12 @@
 
     <div class="container">
         <hr>
+        <br>
     </div>
 
     <div class="container">
         <div class="row justify-content-end">
-            <div class="col-3">
+            <div class="col-2">
                 <div class="col"><i class="bi bi-github"></i> <a href="https://github.com/dutra357">Github</a></div>
                 <div class="col"><i class="bi bi-mailbox"></i> <a href="#">Email</a></div>
                 <div class="col"><i class="bi bi-linkedin"></i> <a href="#">LinkedIn</a></div>
@@ -234,5 +240,10 @@
 
     <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/bootstrap/js/jquery-3.7.1.min.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 </body>
+
 </html>
