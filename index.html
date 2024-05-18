@@ -39,7 +39,6 @@
 
         #contact {
             border: 1px solid aliceblue;
-
         }
     </style>
 </head>
@@ -135,6 +134,7 @@
                         <div class="card-footer text-center">www.exemplo.com.br</div>
                     </div>
                 </div>
+
             </div>
 
         </div>
@@ -167,30 +167,30 @@
 
 
     <div class="container">
+
         <div class="row">
-            <div class="col-md-1 col-sm-2 col-auto" id="contact">
-                <form class="needs-validation" action="" method="post">
-                    <fieldset>
+            <div class="col-12 col-sm-6">
+                <form class="needs-validation" action="" method="post" >
                         <h3>Contato</h3>
                         <div class="form-floating mb-lg-2">
                             <input class="form-control" type="text" name="nome" id="nome" placeholder=" " required>
                             <label class="form-label" for="nome">Nome:</label>
                         </div>
-                        <br>
-        
-                        <div class="form-floating mb-2">
+
+                        <div class="form-floating mb-2 py-2">
                             <input class="form-control" type="email" name="email" id="email" placeholder=" " required>
                             <label class="form-label" for="email">Email:</label>
                         </div>
         
-                        <div class="form-floating">
-                            <textarea name="msg" id="msg" placeholder="  Mensagem" required></textarea>
+                        <div class="form-floating py-lg-2">
+                            <textarea class="form-control" placeholder=" " id="floatingTextarea"></textarea>
+                            <label for="floatingTextarea">Mensagem</label>
                         </div>
                         <button class="btn btn-dark" type="submit"><i class="bi bi-arrow-right-short"></i> Enviar</button>
-                    </fieldset>
                 </form>
             </div>
         </div>
+
     </div>
 
 
