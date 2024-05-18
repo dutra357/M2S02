@@ -50,6 +50,11 @@
         textarea {
             height: 146px;
         }
+
+        .sec-div {
+            border: 1px solid aliceblue;
+        }
+
     </style>
 </head>
 
@@ -79,7 +84,7 @@
 
     <div class="container py-5">
         <div class="row">
-            <div class="col-5">
+            <div class="col-md-6 col-12">
                 <article>
                     <h3>Sobre:</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -178,27 +183,30 @@
 
         <div class="row">
             <div class="col-12 col-sm-8 offset-sm-2 col-lg-6 offset-lg-3">
-                <form class="needs-validation" action="" method="post">
-                    <h3>Contato</h3>
-                    <div class="form-floating">
-                        <input class="form-control" type="text" name="nome" id="nome" placeholder=" " required>
-                        <label class="form-label" for="nome">Nome:</label>
-                    </div>
+                <section class="sec-div p-3">
+                    <form class="needs-validation" action="" method="post">
+                        <h3>Contato</h3>
+                        <div class="form-floating">
+                            <input class="form-control" type="text" name="nome" id="nome" placeholder=" " required>
+                            <label class="form-label" for="nome">Nome:</label>
+                        </div>
+    
+                        <div class="form-floating py-2">
+                            <input class="form-control" type="email" name="email" id="email" placeholder=" " required>
+                            <label class="form-label" for="email">Email:</label>
+                        </div>
+    
+                        <div class="form-floating py-2">
+                            <textarea class="form-control" placeholder=" " id="floatingTextarea"></textarea>
+                            <label for="floatingTextarea">Mensagem</label>
+                        </div>
+                        <div class="text-end">
+                            <button class="btn btn-dark" type="submit"><i class="bi bi-arrow-right-short"></i>
+                                Enviar</button>
+                        </div>
+                    </form>
+                </section>
 
-                    <div class="form-floating py-2">
-                        <input class="form-control" type="email" name="email" id="email" placeholder=" " required>
-                        <label class="form-label" for="email">Email:</label>
-                    </div>
-
-                    <div class="form-floating py-2">
-                        <textarea class="form-control" placeholder=" " id="floatingTextarea"></textarea>
-                        <label for="floatingTextarea">Mensagem</label>
-                    </div>
-                    <div class="text-end">
-                        <button class="btn btn-dark" type="submit"><i class="bi bi-arrow-right-short"></i>
-                            Enviar</button>
-                    </div>
-                </form>
             </div>
         </div>
 
