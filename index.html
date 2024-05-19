@@ -55,7 +55,7 @@
             border: 1px solid aliceblue;
         }
 
-        #sobre {
+        .top-menu {
             border-bottom: 1px solid aliceblue;
         }
 
@@ -88,7 +88,7 @@
 
     <div class="container py-5">
         <div class="row">
-            <div class="col-md-6 col-12" id="sobre">
+            <div class="col-md-6 col-12 top-menu">
                 <article>
                     <h3>Sobre:</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -101,24 +101,26 @@
     </div>
 
     <div class="container">
-        <article>
-            <h3>Stacks:</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo aut reiciendis
-                odit quos porro nulla vel doloremque sapiente voluptatum, animi nemo quaerat?
-                Aliquam hic inventore sequi aut distinctio, laudantium iste.
-            </p>
-
-            <p><i class="bi bi-filetype-sql"></i> SQL</p>
-            <p><i class="bi bi-filetype-java"></i> Java</p>
-            <p><i class="bi bi-filetype-js"></i> JavaScript</p>
-            <p><i class="bi bi-filetype-html"></i> HTML</p>
-            <p></p>
-
-        </article>
+        <div class="rol">
+            <div class="col-md-6 col-12 top-menu">
+                <article>
+                    <h3>Stacks:</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo aut reiciendis
+                        odit quos porro nulla vel doloremque sapiente voluptatum, animi nemo quaerat?
+                        Aliquam hic inventore sequi aut distinctio, laudantium iste.
+                    </p>
+        
+                    <p><i class="bi bi-filetype-sql"></i> SQL</p>
+                    <p><i class="bi bi-filetype-java"></i> Java</p>
+                    <p><i class="bi bi-filetype-js"></i> JavaScript</p>
+                    <p><i class="bi bi-filetype-html"></i> HTML</p>
+                </article>
+            </div>
+        </div>
     </div>
 
     <div class="container">
-        <div class="row">
+        <div class="row py-4">
             <h3> <span data-bs-toggle="tooltip" data-bs-title="Trabalhos realizados">Portfólio</span></h3>
         </div>
 
@@ -226,6 +228,9 @@
 
     <div class="container">
         <div class="row justify-content-end">
+            <div class="col-2">Nossas redes:</div>
+        </div>
+        <div class="row justify-content-end py-2">
             <div class="col-2">
                 <div class="col"><i class="bi bi-github"></i> <a href="https://github.com/dutra357">Github</a></div>
                 <div class="col"><i class="bi bi-mailbox"></i> <a href="#">Email</a></div>
